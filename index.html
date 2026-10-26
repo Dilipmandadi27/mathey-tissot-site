@@ -437,6 +437,105 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .footer-logo-text { display: inline-block; }
+
+/* ---------- MOBILE & TABLET OVERRIDES (<=768px and phone widths) ---------- */
+@media (max-width: 768px) {
+  .nav { padding: 1rem 4%; }
+  .nav-logo-text { font-size: 1.25rem; }
+  .nav-cta { font-size: 0.62rem; padding: 0.65rem 1rem; letter-spacing: 0.12em; }
+
+  .section-title, .ethos-section-title { font-size: clamp(1.8rem, 7vw, 2.6rem); }
+  .section-subtitle { font-size: 0.95rem; }
+
+  .hero-details { width: 90%; bottom: 12%; }
+  .hero-title { font-size: clamp(2.1rem, 9vw, 3.2rem); }
+  .hero-subtitle { font-size: 0.95rem; margin-bottom: 1.6rem; }
+  .hero-cta-group { gap: 1.2rem; }
+
+  .product-reveal-watch-container { width: 62%; top: 34%; }
+  .product-reveal-details { width: 90%; left: 5%; right: auto; bottom: 8%; }
+  .product-reveal-title { font-size: clamp(1.9rem, 8vw, 2.6rem); }
+  .product-reveal-subtitle { font-size: 0.92rem; line-height: 1.6; margin-bottom: 1.4rem; }
+
+  .heritage { height: auto; min-height: 100vh; }
+  .heritage-content { height: auto; min-height: 100vh; padding: 16vh 6% 10vh; justify-content: flex-end; }
+  .heritage-text { max-width: 100%; }
+  .heritage-body { font-size: 1rem; }
+  .heritage-stats { gap: 1.6rem 2.2rem; margin-top: 2.4rem; }
+  .heritage-stat-num { font-size: clamp(1.8rem, 7vw, 2.4rem); }
+
+  .ethos { height: 130vh; min-height: 130vh; }
+  .ethos-header { padding: 14vh 0 0 5%; }
+  .ethos-text-side {
+    top: auto; bottom: 7vh; left: 5%; right: 5%; width: auto; transform: none;
+    text-align: left; align-items: flex-start;
+  }
+  .ethos-text-side .ethos-description { margin-left: 0; max-width: 100%; font-size: 0.95rem; margin-bottom: 1.6rem; }
+  .ethos-text-side .ethos-next-btn { margin-left: 0; width: 52px; height: 52px; }
+  .ethos-alt-title { font-size: clamp(2rem, 8vw, 2.8rem); }
+  .ethos-alt-subtitle { font-size: 0.68rem; letter-spacing: 0.22em; }
+
+  .dismantle-header { top: 8%; left: 5%; width: 90%; max-width: none; }
+  .dismantle-header .section-title { font-size: clamp(1.5rem, 6vw, 2.2rem); }
+
+  .showcase { height: auto; min-height: 100vh; }
+  .showcase-text { padding: 18vh 6% 10vh; max-width: 100%; justify-content: flex-end; }
+  .showcase-headline { font-size: clamp(3rem, 14vw, 5rem); }
+  .showcase-body { font-size: 0.95rem; }
+
+  .footer { padding: 4rem 6% 2rem; }
+  .footer-grid { gap: 2rem 1.4rem; margin-bottom: 2.6rem; }
+  .footer-col a { font-size: 0.84rem; }
+
+  .modal-overlay { padding: 1rem; }
+  .modal { max-height: 92vh; }
+  .modal-title { font-size: 1.8rem; }
+  .modal-left { min-height: 200px; }
+  .modal-left-title { font-size: 1.6rem; }
+}
+
+@media (max-width: 480px) {
+  .nav { padding: 0.9rem 4%; }
+  .nav-logo-text { font-size: 1.05rem; letter-spacing: 0.08em; }
+  .nav-cta { font-size: 0.56rem; padding: 0.6rem 0.8rem; letter-spacing: 0.1em; }
+
+  .hero-title { font-size: clamp(1.9rem, 9.5vw, 2.4rem); line-height: 1.12; }
+  .hero-details { bottom: 14%; }
+  .limited-edition { font-size: 0.64rem; letter-spacing: 0.22em; }
+  .primary-btn, .secondary-btn { padding: 0.9rem 1.4rem; font-size: 0.7rem; }
+
+  .product-reveal-watch-container { width: 74%; top: 30%; }
+  .product-reveal-title { font-size: clamp(1.7rem, 9vw, 2.1rem); }
+  .edition-tag { font-size: 0.66rem; letter-spacing: 0.2em; }
+  .product-reveal-cta-group { gap: 1rem; }
+
+  .heritage-title { font-size: clamp(1.7rem, 9vw, 2.2rem); }
+  .heritage-eyebrow { font-size: 0.64rem; letter-spacing: 0.22em; }
+  .heritage-stats { gap: 1.2rem 1.6rem; }
+  .heritage-stat-label { font-size: 0.6rem; letter-spacing: 0.18em; }
+  .heritage-link { font-size: 0.7rem; }
+
+  .ethos-text-side { bottom: 5vh; }
+  .ethos-alt-title { font-size: clamp(1.8rem, 9vw, 2.3rem); }
+  .ethos-variant-label { font-size: 0.66rem; }
+  .ethos-description p { font-size: 0.9rem; }
+
+  .dismantle-header { top: 6%; }
+  .dismantle-header .section-subtitle { font-size: 0.86rem; }
+
+  .showcase-eyebrow { font-size: 0.64rem; letter-spacing: 0.2em; }
+  .showcase-headline { font-size: clamp(2.8rem, 15vw, 4rem); }
+
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+  .footer-bottom-links { flex-wrap: wrap; gap: 1rem; }
+
+  .modal-overlay { padding: 0.6rem; }
+  .modal-right { padding: 1.6rem 1.2rem; }
+  .modal-title { font-size: 1.6rem; }
+  .modal-close { top: 0.6rem; right: 0.6rem; }
+  .form-group input, .form-group select, .form-group textarea { font-size: 16px; }
+}
 </style>
 </head>
 <body>
